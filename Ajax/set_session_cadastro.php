@@ -90,7 +90,6 @@ if(isset($_GET['nome']) && $_GET['nome'] == 'email'){
                 
 
 
-
 // publico alvo
             
             if(isset($_GET['nome']) && $_GET['nome'] == 'regiao'){  
@@ -148,4 +147,7 @@ if(isset($_GET['nome']) && $_GET['nome'] == 'email'){
                 if(isset($_GET['nome']) && $_GET['nome'] == 'outra_rede'){  
                     $_SESSION['questionario']['servicos']['outra_rede'] = $_GET['valor'];                    
                 }
-                
+// Investimento 
+                if(isset($_GET['nome']) && $_GET['nome'] == 'investimento'){  
+                    $_SESSION['questionario']['investimento']['valor'] = $_GET['valor'];                    
+                }

@@ -4,11 +4,12 @@
             <h2>Questionário</h2>
             <p>A Control system ira avaliar como é o marketing digital de sua empresa, é de suma importância que você seja sincero com as respostas.</p>
 
-                <ul class="nav nav-pills">
-                  <li class="active"><a data-toggle="pill" href="#sobre">Sua Empresa</a></li>
-                  <li><a data-toggle="pill" href="#ramo">Ramo de Atividade</a></li>
-                  <li><a data-toggle="pill" href="#publico">Publico</a></li>
-                  <li><a data-toggle="pill" href="#servicos">Serviços na Web</a></li>
+                <ul class="nav navbar-nav">
+                  <li page-scroll class="active"><a data-toggle="pill" href="#sobre">Sua Empresa</a></li>
+                  <li page-scroll><a data-toggle="pill" href="#ramo">Ramo de Atividade</a></li>
+                  <li page-scroll><a data-toggle="pill" href="#publico">Publico</a></li>
+                  <li page-scroll><a data-toggle="pill" href="#servicos">Serviços na Web</a></li>
+                  <li page-scroll><a data-toggle="pill" href="#investimento">Investimento</a></li>
                 </ul>
                 
                 <div class="tab-content">
@@ -76,10 +77,9 @@
                     </div>
                     <div id="ramo" class="tab-pane fade">
                         <div class="row">
-                        <p>Ramo de Atividade</p>
+                        <p>Ramos de Atividade</p>
                          
-                        <form method="POST" action="Ajax/set_session_cadastro.php" class="form-horizontal" role="form"> 
-                               <p class="control-label col-sm-2" for="nome">Ramos :</p>
+                        <form method="POST" action="Ajax/set_session_cadastro.php" class="form-horizontal" role="form">                               
                                 <div class="form-group">        
                                   <div class="col-lg-12">
                                       
@@ -187,9 +187,9 @@
                                                 <button type="subbmit" data-toggle="pill" href="#servicos" class="btn btn-default">Próximo</button>
                                              </div>      
                                        </form>
-                          </div>
-                        </div>
-                  </div>
+                                    </div>
+                            </div>
+                     </div>
                     <div id="servicos" class="tab-pane fade">
                         <div class="row">
                         <p>Quais serviços que ja possui na Web ?</p>                         
@@ -200,7 +200,13 @@
                                       <input class="checkbox" type="checkbox" id="site">                                      
                                       <div id="endereco" hidden="on" class="modal-body">
                                         <p>Endereço.</p>
-                                        <input type="text" class="form-control" id="site" name="site" placeholder="www.exemplo.com.br" onchange="setSession(this.value,this.name);">
+                                        <input type="text" class="form-control" id="site" name="site" placeholder="www.exemplo.com.br" onchange="setSession(this.value,this.name);"
+                                               value="<?php
+                                                    if(isset($_SESSION['questionario']['servicos']['site']) && $_SESSION['questionario']['servicos']['site'] != ""){
+                                                        echo $_SESSION['questionario']['servicos']['site'];
+                                                    } 
+                                                        ?>"
+                                                        >
                                       </div>
                                   </div>                                  
                                 </div>
@@ -210,7 +216,13 @@
                                       <input class="checkbox" type="checkbox" id="face">                                      
                                       <div id="linkface" hidden="on" class="modal-body">
                                         <p>Endereço.</p>
-                                        <input type="text" class="form-control" id="facebook" name="facebook" placeholder="facebook.com/MEUPERFIL" onchange="setSession(this.value,this.name);">
+                                        <input type="text" class="form-control" id="facebook" name="facebook" placeholder="facebook.com/MEUPERFIL" onchange="setSession(this.value,this.name);"
+                                               value="<?php
+                                                    if(isset($_SESSION['questionario']['servicos']['facebook']) && $_SESSION['questionario']['servicos']['facebook'] != ""){
+                                                        echo $_SESSION['questionario']['servicos']['facebook'];
+                                                    } 
+                                                        ?>"
+                                                        >
                                       </div>
                                   </div>                                  
                                 </div>
@@ -220,7 +232,13 @@
                                       <input class="checkbox" type="checkbox" id="insta">                                      
                                       <div id="linkinsta" hidden="on" class="modal-body">
                                         <p>Endereço.</p>
-                                        <input type="text" class="form-control" id="instagram" name="instagram" placeholder="instagram.com/MEUPERFIL" onchange="setSession(this.value,this.name);">
+                                        <input type="text" class="form-control" id="instagram" name="instagram" placeholder="instagram.com/MEUPERFIL" onchange="setSession(this.value,this.name);"
+                                               value="<?php
+                                                    if(isset($_SESSION['questionario']['servicos']['instagram']) && $_SESSION['questionario']['servicos']['instagram'] != ""){
+                                                        echo $_SESSION['questionario']['servicos']['instagram'];
+                                                    } 
+                                                        ?>"
+                                                        >
                                       </div>
                                   </div>                                  
                                 </div>
@@ -230,10 +248,40 @@
                                       <input class="checkbox" type="checkbox" id="other">                                      
                                       <div id="linkoutra" hidden="on" class="modal-body">
                                         <p>Endereço.</p>
-                                        <input type="text" class="form-control" id="outra_rede" name="outra_rede" placeholder="Coloque o link aqui..." onchange="setSession(this.value,this.name);">
+                                        <input type="text" class="form-control" id="outra_rede" name="outra_rede" placeholder="Coloque o link aqui..." onchange="setSession(this.value,this.name);"
+                                               value="<?php
+                                                    if(isset($_SESSION['questionario']['servicos']['outra_rede']) && $_SESSION['questionario']['servicos']['outra_rede'] != ""){
+                                                        echo $_SESSION['questionario']['servicos']['outra_rede'];
+                                                    } 
+                                                        ?>"
+                                                        >
                                       </div>
                                   </div>
                                 </div>
+                            <div class="form-group">
+                                                <button type="subbmit" data-toggle="pill" href="#investimento" class="btn btn-default">Próximo</button>
+                            </div> 
+                        </form>
+                    </div>
+                    </div>
+                     <div id="investimento" class="tab-pane fade">
+                        <div class="row">
+                        <p>Qual seu investimento ?</p>                         
+                        <form method="POST" class="form-horizontal" role="form"> 
+                             <div class="form-group">
+                                  <p class="control-label col-sm-2" for="site">Valor :</p>
+                                  <div class="col-sm-6">
+                                      <input type="text" class="form-control" id="investimento" name="investimento" placeholder="Valor que é investido em marketing." onchange="setSession(this.value,this.name);"
+                                                    value="<?php
+                                                    if(isset($_SESSION['questionario']['investimento']['valor']) && $_SESSION['questionario']['investimento']['valor'] != ""){
+                                                        echo $_SESSION['questionario']['investimento']['valor'];
+                                                    } 
+                                                        ?>"
+                                                    >
+                                  </div> 
+                                  
+                                </div>
+                            
                         </form>
                     </div>
                     </div>
