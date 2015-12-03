@@ -35,7 +35,23 @@
                 $.get(url, function(dataReturn){});                
         }
     </script>
-
+    <script>
+        $(document).ready(function(){
+                 $("#site").click(function(){
+                    $("#endereco").fadeToggle("slow");
+                });
+                $("#face").click(function(){
+                    $("#linkface").fadeToggle("slow");
+                });
+                $("#insta").click(function(){
+                    $("#linkinsta").fadeToggle("slow");
+                });                                
+                $("#other").click(function(){
+                    $("#linkoutra").fadeToggle("slow");
+                });
+                
+});
+    </script>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
     <?php include_once("view/nav.php") ?>
