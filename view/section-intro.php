@@ -11,7 +11,7 @@
                         <!-- </div> -->
                     <!-- </div> -->
                     <div class="page-scroll">
-                        <a href="#about" class="btn btn-circle">
+                        <a href="#about" class="btn btn-circle" style="color:#000; border: 4px solid#000; background-color:rgba(255,255,255,0.5)">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
