@@ -20,10 +20,7 @@
                     <a href="#about">Formulário</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#download">Download</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
         </div>

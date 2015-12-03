@@ -45,8 +45,10 @@
 
     <?php include_once("view/section-contact.php") ?>    
 
+    <?php include_once("view/section-footer.php") ?>    
+
     
-    <div id="map"></div>
+    <!-- <div id="map"></div> -->
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

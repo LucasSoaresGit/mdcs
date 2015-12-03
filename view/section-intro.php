@@ -1,9 +1,9 @@
 <section class="intro">
     <div class="intro-body">
         
-            <div class="row">
+            <div class="row" style="margin-left: 0px; margin-right: 0px">
                 <div class="col-md-12">
-                    <h1 class="brand-heading"><img src="img/logo.png"></h1>
+                    <h1 class="brand-heading"><img  src="img/logo.png"></h1>
                     <!-- <div class="content"> -->
                         <!-- <div class="col-md-8"> -->
                             <p class="intro-text">Nós da MDCS no sentimos honrados com sua escolha e não pouparemos esforços para que seu investimento tenha o máximo de retorno</p>

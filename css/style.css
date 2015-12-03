@@ -1,3 +1,6 @@
+body {
+	font-family: Arial;
+}
 .intro-text{
 	font-family: Arial;
 	border-top: 1px solid#cdcdcd;
@@ -5,7 +8,6 @@
 	background-color:rgba(55,55,55,0.7);
 	color: #fff;
 	padding: 50px;
-	/*font-size:30px;*/
 	text-shadow: 1px 0px 0px #565656, 
                  -1px 0px 0px #565656, 
                  0px 1px 0px #565656, 
@@ -16,4 +18,22 @@
 }
 .brand-heading img:hover{
 	transform: scale(1.2);
+}
+.intro-contato{
+	/*display: table;*/
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/background-contato.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* remove o espaço que tem entre a <section>contato</section> e o <map></map>*/
+#map {
+	margin-top: 0px;
 }
