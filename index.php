@@ -20,12 +20,9 @@
 
     <!-- Custom Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-<<<<<<< HEAD
+
     <link href="css/style.css" rel="stylesheet">
 
-=======
-  
->>>>>>> 365968cb2d88411d67d7bee212485c9873238f6e
 </head>
   <script>
         function setSession(valor,nome){

@@ -1,4 +1,3 @@
-
 <section class="intro">
     <div class="intro-body">
         
@@ -8,7 +7,7 @@
                     <!-- <div class="content"> -->
                         <!-- <div class="col-md-8"> -->
                             <p class="intro-text">Nós da MDCS no sentimos honrados com sua escolha e não pouparemos esforços para que seu investimento tenha o máximo de retorno</p>
-                            <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+                            
                         <!-- </div> -->
                     <!-- </div> -->
                     <div class="page-scroll">
