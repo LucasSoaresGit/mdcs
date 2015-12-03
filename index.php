@@ -1,3 +1,4 @@
+<?php session_start(); ?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
     <!-- Fonts -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -19,9 +20,21 @@
 
     <!-- Custom Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+<<<<<<< HEAD
     <link href="css/style.css" rel="stylesheet">
 
+=======
+  
+>>>>>>> 365968cb2d88411d67d7bee212485c9873238f6e
 </head>
+  <script>
+        function setSession(valor,nome){
+            var vlr = valor;
+            var n = nome;
+            var url = "Ajax/set_session_cadastro.php?valor="+vlr+"&nome="+n;
+                $.get(url, function(dataReturn){});                
+        }
+    </script>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
