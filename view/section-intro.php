@@ -1,10 +1,16 @@
+
 <section class="intro">
     <div class="intro-body">
-        <div class="container">
+        
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Grayscale</h1>
-                    <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                <div class="col-md-12">
+                    <h1 class="brand-heading"><img src="img/logo.png"></h1>
+                    <!-- <div class="content"> -->
+                        <!-- <div class="col-md-8"> -->
+                            <p class="intro-text">Nós da MDCS no sentimos honrados com sua escolha e não pouparemos esforços para que seu investimento tenha o máximo de retorno</p>
+                            <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+                        <!-- </div> -->
+                    <!-- </div> -->
                     <div class="page-scroll">
                         <a href="#about" class="btn btn-circle">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -12,6 +18,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </div>
 </section>

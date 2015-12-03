@@ -5,7 +5,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="#page-top">
-                <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                <i class="fa fa-play-circle"></i>  <span class="light">HOME</span>
             </a>
         </div>
 
@@ -17,7 +17,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about">About</a>
+                    <a href="#about">Formulário</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#download">Download</a>
