@@ -17,7 +17,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about">Formulário</a>
+                    <a href="#about">Questionário</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#contact">Contato</a>

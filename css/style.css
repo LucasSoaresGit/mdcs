@@ -33,7 +33,26 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+.intro-form{
+    /*display: table;*/
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/back-form.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /* remove o espaço que tem entre a <section>contato</section> e o <map></map>*/
 #map {
 	margin-top: 0px;
+}
+
+.content-section {
+     padding-top: 100px; 
 }
