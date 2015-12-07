@@ -6,7 +6,7 @@
                     <h1 class="brand-heading"><img  src="img/logo.png"></h1>
                     <!-- <div class="content"> -->
                         <!-- <div class="col-md-8"> -->
-                            <p class="intro-text">Nós da MDCS no sentimos honrados com sua escolha e não pouparemos esforços para que seu investimento tenha o máximo de retorno</p>
+                            <p class="intro-text">Nós da MDCS nos sentimos honrados com sua escolha e não pouparemos esforços para que seu investimento tenha o máximo de retorno</p>
                             
                         <!-- </div> -->
                     <!-- </div> -->
