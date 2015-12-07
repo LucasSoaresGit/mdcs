@@ -218,7 +218,7 @@
                                        <div class="form-group">
                                             <p class="control-label col-sm-2" for="site">Valor :</p>
                                             <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="site" name="pretensao_investimento" placeholder="R$ 1000,00" >                                      
+                                                <input type="text" onkeyup="mascara(this, mvalor);" class="form-control" id="site" name="pretensao_investimento" placeholder="R$ 1000,00" >                                      
                                             </div>                                  
                                        </div>
                                   </div>

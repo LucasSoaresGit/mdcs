@@ -42,7 +42,18 @@ class Formulario{
 				if($form->$name_post == 'nao'){//if 'nao' the $form->$name_post receive 0 bacause the data base is integer
 					$form->$name_post = 0;
 				}
+                                if($name_post == 'pretensao_investimento'){
+                                    
+                                        $replace = array(".","R$ ");
+                                        $string = str_replace($replace, "", $_POST[$name_post]);
 
+                                        $replace = array(",");
+                                        $string = str_replace($replace, ".", $string); 
+                                        
+                                        $form->$name_post = $string;
+                                        
+                                        echo '<script>alert('.$form->$name_post.')</script>';
+                                }
 				if($name_post == 'ramos'){
 					foreach ($ramos as $key => $value) {
 						$form->$name_post .= (isset($_POST[$value])) ? $_POST[$value].':' : null;
@@ -71,7 +82,7 @@ class Formulario{
 			$sql .= ') VALUES (';
 			foreach($data as $name_campo => $v){				
 					$sql .= (isset($v) && $v != '') ? '"'.$v.'", ' : null;
-			}
+                                        			}
 			$sql = substr($sql, 0, -2); // remove last ',' from sql
 			
 			$sql .= ')';
